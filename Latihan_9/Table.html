@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Judul Website -->
+	<title>Latihan 9 | Basic Pemrograman Web</title>
+</head>
+<body>
+	<h1 align="center">How to Make Table in HTML</h1><hr>
+
+	<!-- Basic Table di Bawah Ini Merupakan Contoh Penggunaan Tabel Sederhana Pada HTML. Pasti Kalian Bingung Mengapa Tabel Basic di Bawah Ini Tidak Memunculkan Garis, Sedangkan Tabel Sendiri Mempunyai Sebuah Garis Bukan? Langsung Saja Kalian Lanjut ke Poin Nomor 2 di Bawah Ini Mengenai Table Border. -->
+	<h2>1. Basic Table</h2>
+	<table>
+		<tr>
+			<td>Cell 1, Baris 1, Kolom 1</td>
+			<td>Cell 2, Baris 1, Kolom 2</td>
+			<td>Cell 3, Baris 1, Kolom 3</td>
+		</tr>
+		<tr>
+			<td>Cell 1, Baris 2, Kolom 1</td>
+			<td>Cell 2, Baris 2, Kolom 2</td>
+			<td>Cell 3, Baris 2, Kolom 3</td>
+		</tr>
+		<tr>
+			<td>Cell 1, Baris 3, Kolom 1</td>
+			<td>Cell 2, Baris 3, Kolom 2</td>
+			<td>Cell 3, Baris 3, Kolom 3</td>
+		</tr>
+	</table>
+
+	<!-- Dalam Tag <table> Terdapat Atribut border="". Atribut Inilah yang Perlu Kalian Gunakan Jika Ingin Memberi Garis Pada Tabel yang Kalian Buat. Semakin Besar Nilai Atribut border="" yang Kalian, Maka Semakin Tebal Pula Garis yang akan Dihasilkan. -->
+	<h2>2. Table Border</h2>
+	<table border="1">
+		<tr>
+			<td>Cell 1, Baris 1, Kolom 1</td>
+			<td>Cell 2, Baris 1, Kolom 2</td>
+			<td>Cell 3, Baris 1, Kolom 3</td>
+		</tr>
+		<tr>
+			<td>Cell 1, Baris 2, Kolom 1</td>
+			<td>Cell 2, Baris 2, Kolom 2</td>
+			<td>Cell 3, Baris 2, Kolom 3</td>
+		</tr>
+		<tr>
+			<td>Cell 1, Baris 3, Kolom 1</td>
+			<td>Cell 2, Baris 3, Kolom 2</td>
+			<td>Cell 3, Baris 3, Kolom 3</td>
+		</tr>
+	</table>
+
+	<!-- Dalam Tag <table> Terdapat Atribut cellspacing="" dan cellpadding="". Pertama, Fungsi Dari Atribut cellspacing="" Adalah untuk Memberikan Luas Ruang Pada Bagian Luar Cell. Dalam Contoh di Bawah Ini Saya Menggunakan nilai cellspacing="0", Artinya Saya Tidak Ingin Memberikan Luas Ruang Tambahan Pada Bagian Luar Cell atau Menghilangkannya. Jika Kamu Ingin Memberikan Luas Ruang Pada Bagian Luar Cell, Maka Kamu Bisa Memberi Nilai Pada Atribut cellspacing="" Lebih Dari 0. Kedua, Fungsi Dari Atribut cellpadding="" Sendiri Merupakan Kebalikan Dari Atribut cellspacing="", yaitu Memberikan Luas Ruang Pada Bagian Dalam Cell. -->
+	<h2>3. Table Cellspacing & Cellpadding</h2>
+	<table border="1" cellspacing="0" cellpadding="10">
+		<tr>
+			<td>Cell 1, Baris 1, Kolom 1</td>
+			<td>Cell 2, Baris 1, Kolom 2</td>
+			<td>Cell 3, Baris 1, Kolom 3</td>
+		</tr>
+		<tr>
+			<td>Cell 1, Baris 2, Kolom 1</td>
+			<td>Cell 2, Baris 2, Kolom 2</td>
+			<td>Cell 3, Baris 2, Kolom 3</td>
+		</tr>
+		<tr>
+			<td>Cell 1, Baris 3, Kolom 1</td>
+			<td>Cell 2, Baris 3, Kolom 2</td>
+			<td>Cell 3, Baris 3, Kolom 3</td>
+		</tr>
+	</table>
+
+	<!-- Di Bawah Ini Merupakan Contoh Simple Table yang Bisa Kalian Coba. -->
+	<h2>4. Simple Table</h2>
+	<table border="1" cellspacing="0" cellpadding="10">
+		<tr align="center">
+			<td><strong>#NO</strong></td>
+			<td><strong>NAMA</strong></td>
+			<td><strong>GOLONGAN</strong></td>
+			<td><strong>PROGRAM STUDI</strong></td>
+			<td><strong>JURUSAN</strong></td>
+		</tr>
+		<tr>
+			<td align="center">1</td>
+			<td>Ahmad Wildan</td>
+			<td>B Bondowoso</td>
+			<td>Teknik Informatika</td>
+			<td>Teknologi Informasi</td>
+		</tr>
+		<tr>
+			<td align="center">2</td>
+			<td>Amalia Siska Kurniawati</td>
+			<td>A Bondowoso</td>
+			<td>Teknik Informatika</td>
+			<td>Teknologi Informasi</td>
+		</tr>
+		<tr>
+			<td align="center">3</td>
+			<td>Azril Nur Rahman</td>
+			<td>C Bondowoso</td>
+			<td>Teknik Informatika</td>
+			<td>Teknologi Informasi</td>
+		</tr>
+	</table>
+
+	<!-- Di Bawah Ini Merupakan Contoh Complex Table yang Bisa Kalian Coba. -->
+	<h2>5. Complex Table</h2>
+	<table border="1" cellspacing="0" cellpadding="10">
+		<thead>
+			<tr>
+				<th>#TITLE</th>
+				<th>JUARA 1</th>
+				<th>JUARA 2</th>
+				<th>JUARA 3</th>
+			</tr>
+		</thead>
+		<tbody align="left">
+			<tr>
+				<th>NAMA</th>
+				<td>Ahmad Wildan</td>
+				<td>Amalia Siska Kurniawati</td>
+				<td>Azril Nur Rahman</td>
+			</tr>
+			<tr>
+				<th>GOLONGAN</th>
+				<td>B Bondowoso</td>
+				<td>A Bondowoso</td>
+				<td>C Bondowoso</td>
+			</tr>
+			<tr>
+				<th>PROGRAM STUDI</th>
+				<td>Teknik Informatika</td>
+				<td>Teknik Informatika</td>
+				<td>Teknik Informatika</td>
+			</tr>
+			<tr>
+				<th>JURUSAN</th>
+				<td>Teknologi Informasi</td>
+				<td>Teknologi Informasi</td>
+				<td>Teknologi Informasi</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- Fungsi Atribut colspan="" Adalah untuk Menyatukan Kolom. Sedangkan Fungsi Dari Atribut rowspan="" Adalah untuk Menyatukan Baris. Nilai yang Diinputkan dalam Kedua Atribut Tersebut Harus Menyesuiakan dengan Jumlah Kolom atau Baris yang Ingin Kalian Satukan. Untuk Contoh Penggunaannya Bisa Kalian Lihat di Bawah Ini! -->
+	<h2>6. Table Colspan & Rowspan</h2>
+	<table border="1" cellspacing="0" cellpadding="10">
+		<thead>
+			<tr>
+				<th colspan="4"><h2>JADWAL PELAJARAN KELAS 10 RPL</h2></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>#</th>
+				<th>JAM</th>
+				<th>MATA PELAJARAN</th>
+				<th>GURU PENGAJAR</th>
+			</tr>
+			<tr>
+				<th rowspan="6">SENIN</th>
+				<td>07.00 - 08.30</td>
+				<td>Matematika</td>
+				<td>P. Sugiono</td>
+			</tr>
+			<tr>
+				<td>08.30 - 10.00</td>
+				<td>PPKN</td>
+				<td>B. Sri Nirwangsih</td>
+			</tr>
+			<tr>
+				<td>10.00 - 10.30</td>
+				<td colspan="2" align="center">Istirahat Pertama</td>
+			</tr>
+			<tr>
+				<td>10.30 - 12.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+			<tr>
+				<td>12.00 - 12.30</td>
+				<td colspan="2" align="center">ISHOMA</td>
+			</tr>
+			<tr>
+				<td>12.30 - 14.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+			<tr>
+				<th rowspan="6">SELASA</th>
+				<td>07.00 - 08.30</td>
+				<td>Matematika</td>
+				<td>P. Sugiono</td>
+			</tr>
+			<tr>
+				<td>08.30 - 10.00</td>
+				<td>PPKN</td>
+				<td>B. Sri Nirwangsih</td>
+			</tr>
+			<tr>
+				<td>10.00 - 10.30</td>
+				<td colspan="2" align="center">Istirahat Pertama</td>
+			</tr>
+			<tr>
+				<td>10.30 - 12.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+			<tr>
+				<td>12.00 - 12.30</td>
+				<td colspan="2" align="center">ISHOMA</td>
+			</tr>
+			<tr>
+				<td>12.30 - 14.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+			<tr>
+				<th rowspan="6">RABU</th>
+				<td>07.00 - 08.30</td>
+				<td>Matematika</td>
+				<td>P. Sugiono</td>
+			</tr>
+			<tr>
+				<td>08.30 - 10.00</td>
+				<td>PPKN</td>
+				<td>B. Sri Nirwangsih</td>
+			</tr>
+			<tr>
+				<td>10.00 - 10.30</td>
+				<td colspan="2" align="center">Istirahat Pertama</td>
+			</tr>
+			<tr>
+				<td>10.30 - 12.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+			<tr>
+				<td>12.00 - 12.30</td>
+				<td colspan="2" align="center">ISHOMA</td>
+			</tr>
+			<tr>
+				<td>12.30 - 14.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+			<tr>
+				<th rowspan="6">KAMIS</th>
+				<td>07.00 - 08.30</td>
+				<td>Matematika</td>
+				<td>P. Sugiono</td>
+			</tr>
+			<tr>
+				<td>08.30 - 10.00</td>
+				<td>PPKN</td>
+				<td>B. Sri Nirwangsih</td>
+			</tr>
+			<tr>
+				<td>10.00 - 10.30</td>
+				<td colspan="2" align="center">Istirahat Pertama</td>
+			</tr>
+			<tr>
+				<td>10.30 - 12.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+			<tr>
+				<td>12.00 - 12.30</td>
+				<td colspan="2" align="center">ISHOMA</td>
+			</tr>
+			<tr>
+				<td>12.30 - 14.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+			<tr>
+				<th rowspan="6">JUM'AT</th>
+				<td>07.00 - 09.00</td>
+				<td>Matematika</td>
+				<td>P. Sugiono</td>
+			</tr>
+			<tr>
+				<td>09.00 - 11.00</td>
+				<td>PPKN</td>
+				<td>B. Sri Nirwangsih</td>
+			</tr>
+			<tr>
+				<td>11.00 - 12.00</td>
+				<td colspan="2" align="center">ISHOMA</td>
+			</tr>
+			<tr>
+				<td>12.00 - 14.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- Jika Kalian Ingin Mengubah Lebar atau Tinggi Pada Sebuah Tabel di HTML, Maka Atribut yang Perlu Kalian Gunakan Adalah width="" dan height="". Masukkan Nilai Pada width="" height="" Sesuai dengan Keinginan Kalian untuk Mengubah Lebar dan Tinggi Tabelnya. Untuk Contohnya Bisa Kalian Lihat di Bawah Ini! -->
+	<h2>7. Table Width & Height</h2>
+	<table border="1" cellspacing="0" cellpadding="10" width="100%" height="500px">
+		<thead>
+			<tr>
+				<th colspan="4"><h2>JADWAL PELAJARAN KELAS 10 RPL</h2></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>#</th>
+				<th>JAM</th>
+				<th>MATA PELAJARAN</th>
+				<th>GURU PENGAJAR</th>
+			</tr>
+			<tr>
+				<th rowspan="6">SENIN</th>
+				<td>07.00 - 08.30</td>
+				<td>Matematika</td>
+				<td>P. Sugiono</td>
+			</tr>
+			<tr>
+				<td>08.30 - 10.00</td>
+				<td>PPKN</td>
+				<td>B. Sri Nirwangsih</td>
+			</tr>
+			<tr>
+				<td>10.00 - 10.30</td>
+				<td colspan="2" align="center">Istirahat Pertama</td>
+			</tr>
+			<tr>
+				<td>10.30 - 12.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+			<tr>
+				<td>12.00 - 12.30</td>
+				<td colspan="2" align="center">ISHOMA</td>
+			</tr>
+			<tr>
+				<td>12.30 - 14.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- Untuk Memberi Warna Pada Sebuah Tabel di HTML. Kalian Bisa Menggunakan Atribut bgcolor="" ke Dalam Tag <table>. Selain itu, Jika Kalian Hanya Ingin Mengubah Warna Pada Beberapa Kolom atau Baris Saja. Kalian Juga Bisa Menggunakan Atribut bgcolor="" ke Dalam Tag <tr>, <th>, maupun <td>. Selamat Mencoba Yaa! -->
+	<h2>8. Table Full Background Color</h2>
+	<table border="1" cellspacing="0" cellpadding="10" width="100%" height="500px" bgcolor="AQUA">
+		<thead>
+			<tr>
+				<th colspan="4"><h2>JADWAL PELAJARAN KELAS 10 RPL</h2></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>#</th>
+				<th>JAM</th>
+				<th>MATA PELAJARAN</th>
+				<th>GURU PENGAJAR</th>
+			</tr>
+			<tr>
+				<th rowspan="6">SENIN</th>
+				<td>07.00 - 08.30</td>
+				<td>Matematika</td>
+				<td>P. Sugiono</td>
+			</tr>
+			<tr>
+				<td>08.30 - 10.00</td>
+				<td>PPKN</td>
+				<td>B. Sri Nirwangsih</td>
+			</tr>
+			<tr>
+				<td>10.00 - 10.30</td>
+				<td colspan="2" align="center">Istirahat Pertama</td>
+			</tr>
+			<tr>
+				<td>10.30 - 12.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+			<tr>
+				<td>12.00 - 12.30</td>
+				<td colspan="2" align="center">ISHOMA</td>
+			</tr>
+			<tr>
+				<td>12.30 - 14.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h2>9. Mix Color Table</h2>
+	<table border="1" cellspacing="0" cellpadding="10" width="100%" height="500px">
+		<thead>
+			<tr bgcolor="YELLOW">
+				<th colspan="4"><h2>JADWAL PELAJARAN KELAS 10 RPL</h2></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr bgcolor="LIGHTBLUE">
+				<th>#</th>
+				<th>JAM</th>
+				<th>MATA PELAJARAN</th>
+				<th>GURU PENGAJAR</th>
+			</tr>
+			<tr>
+				<th rowspan="6" bgcolor="LIGHTBLUE">SENIN</th>
+				<td>07.00 - 08.30</td>
+				<td>Matematika</td>
+				<td>P. Sugiono</td>
+			</tr>
+			<tr>
+				<td>08.30 - 10.00</td>
+				<td>PPKN</td>
+				<td>B. Sri Nirwangsih</td>
+			</tr>
+			<tr>
+				<td >10.00 - 10.30</td>
+				<td colspan="2" align="center" bgcolor="LIGHTGREEN">Istirahat Pertama</td>
+			</tr>
+			<tr>
+				<td>10.30 - 12.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+			<tr>
+				<td>12.00 - 12.30</td>
+				<td colspan="2" align="center" bgcolor="LIGHTGREEN">ISHOMA</td>
+			</tr>
+			<tr>
+				<td>12.30 - 14.00</td>
+				<td>Pemrograman Website</td>
+				<td>P. Sandika</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

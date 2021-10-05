@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Judul Website -->
+	<title>Latihan 10 | Basic Pemrograman Web</title>
+</head>
+<body>
+	<h1 align="center">How to Make Form in HTML</h1><hr>
+
+	<!-- Dalam Membuat Sebuah Form Kita Memerlukan Tag <form>...</form>. Untuk Contoh Tipe-Tipe Inputan yang Bisa Digunakan Di Form. Bisa Kalian Lihat Pada Contoh Di Bawah Ini. -->
+	<h2>1. Basic Form</h2>
+	<form>
+		<label>*Email</label>
+		<input type="email" size="30" required>
+		<label>*Password</label>
+		<input type="password" size="30" required>
+		<input type="submit" value="Login">
+	</form>
+
+	<!--  -->
+	<h2>2. Form With Table</h2>
+	<form action="">
+		<table border="1" cellspacing="0" cellpadding="10" width="50%">
+			<tr align="center">
+				<td colspan="3"><h3>FORM BIODATA</h3></td>
+			</tr>
+			<tr>
+				<td>*Nama Lengkap</td>
+				<td>:</td>
+				<td>
+					<input type="text" required autofocus>
+				</td>
+			</tr>
+			<tr>
+				<td>*Tempat Lahir</td>
+				<td>:</td>
+				<td>
+					<input list="TempatLahir" required>
+					<datalist id="TempatLahir">
+						<option value="Bandung">
+						<option value="Jakarta">
+						<option value="Surabaya">
+						<option value="Bali">
+						<option value="Kalimantan">
+					</datalist>
+				</td>
+			</tr>
+			<tr>
+				<td>*Tanggal Lahir</td>
+				<td>:</td>
+				<td>
+					<input type="date" required>
+				</td>
+			</tr>
+			<tr>
+				<td>*Golongan Darah</td>
+				<td>:</td>
+				<td>
+					<input type="radio" name="radio" required> A <br>
+					<input type="radio" name="radio" required> B <br>
+					<input type="radio" name="radio" required> O <br>
+					<input type="radio" name="radio" required> AB
+				</td>
+			</tr>
+			<tr>
+				<td>*Jenis Kelamin</td>
+				<td>:</td>
+				<td>
+					<select required>
+						<option>Laki-laki</option>
+						<option>Perempuan</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>*Alamat</td>
+				<td>:</td>
+				<td>
+					<textarea cols="50" rows="5" required></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>*Hobi</td>
+				<td>:</td>
+				<td>
+					<input type="checkbox"> Membaca <br>
+					<input type="checkbox"> Renang <br>
+					<input type="checkbox"> Sepak Bola <br>
+					<input type="checkbox"> Bola Voly <br>
+					<input type="checkbox"> Lain-lain
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center">
+					<button type="submit">Simpan Data</button>
+					<button type="reset">Reset Data</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
